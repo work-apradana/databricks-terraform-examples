@@ -41,3 +41,6 @@ terraform.rc
 
 # Ignore reference README.md
 **/README.reference.md
+
+# Ignore logs
+**/*.log
