@@ -1,0 +1,5 @@
+gcp_credentials_path = "/path/to/gcp-service-account.json"
+gcp_project_id = "my-project-id"
+gcp_region = "us-central1"
+databricks_gcp_account_id = "0000-1234-abcd-efgh"
+databricks_gcp_account_profile = "my-gcp-databricks-profile"
