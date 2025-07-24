@@ -1,7 +1,7 @@
 variable "default_tags" {
   type = map(string)
   default = {
-    owner = "aditya_pradana"
+    Owner = "aditya_pradana"
   }
 }
 
@@ -12,6 +12,5 @@ resource "random_string" "naming" {
 }
 
 locals {
-  prefix = "apradana-${random_string.naming.result}"
+  prefix = "databricks-${var.databricks_gcp_workspace_id}-apradana-${random_string.naming.result}"
 }
-
