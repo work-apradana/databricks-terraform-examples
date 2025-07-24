@@ -18,7 +18,7 @@ This directory contains code to provision a Databricks Metastore and all require
 - `dbx-external-locations.tf`: Provisions the Unity Catalog Metastore and workspace assignment.
 - `variables.tf`: Input variables for customizing the deployment. Variables are further breakdown into subfiles to indicate where they belong.
 - `outputs.tf`: Useful outputs such as metastore ID, bucket name, and role ARN.
-- `main.tf`: Intentionally left blank for future module-based deployment.
+- `main.tf`: Intentionally left empty for future submodule-based deployment.
 
 ## Usage
 

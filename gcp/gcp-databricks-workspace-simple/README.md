@@ -12,10 +12,10 @@ This module provisions a Databricks workspace on Google Cloud Platform (GCP) usi
 This directory contains the following files:
 
 - `providers.tf`: Configures the required providers.
-- `variables.tf`: Input variables and local values.
+- `variables.tf`: Input variables and local values. It is broken down into subfiles to indicate databricks and gcp specific variables.
 - `variables-gcp.tf`: GCP-specific variables.
 - `variables-dbx.tf`: Databricks-specific variables.
-- `main.tf`: Provision the main workspaces using all the default values
+- `main.tf`: Intentionally left empty for future submodule-based deployment.
 - `outputs.tf`: Exposes useful outputs from the module.
 
 ## Notes

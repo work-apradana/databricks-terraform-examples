@@ -4,7 +4,7 @@
 
 This repository contains practical examples of using [Terraform](https://www.terraform.io/) to deploy and manage [Databricks](https://databricks.com/) workspaces and resources across multiple cloud providers. It is intended as a reference for infrastructure engineers, data engineers, and anyone interested in automating Databricks deployments using Infrastructure as Code (IaC) principles.
 
-This is my personal repository, you can find more comprehensive example of [Databricks official terraform examples](https://github.com/databricks/terraform-databricks-examples).
+This is my personal repository, you can find more comprehensive example of [Databricks Official Terraform examples](https://github.com/databricks/terraform-databricks-examples).
 
 ## Repository Structure
 
@@ -18,7 +18,7 @@ The repository is organized by provider, with each provider having its own direc
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/terraform-databricks-examples.git
+   git clone https://github.com/work-apradana/terraform-databricks-examples.git
    cd terraform-databricks-examples
    ```
 

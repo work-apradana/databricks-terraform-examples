@@ -19,7 +19,7 @@ This directory contains Terraform code to provision a Databricks workspace and a
 - `dbx-workspace.tf`: Provisions the Databricks workspace and supporting resources.
 - `variables.tf`: Input variables for customizing the deployment. Variables are further breakdown into subfiles to indicate where they belong.
 - `outputs.tf`: Useful outputs such as workspace URL.
-- `main.tf`: Intentionally left blank for future module-based deployment.
+- `main.tf`: Intentionally left empty for future submodule-based deployment.
 
 ## Usage
 

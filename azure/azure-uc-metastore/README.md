@@ -14,7 +14,8 @@ This directory contains code to provision Databricks metastore and associated Az
 ## Files Overview
 
 - `providers.tf`: Configures required providers.
-- `variables.tf`: Input variables and local values.
+- `main.tf`: Intentionally left empty for future submodule-based deployment.
+- `variables.tf`: Input variables and local values. It is broken down into subfiles to indicate databricks and azure specific variables
 - `dbx-metastore.tf`: Databricks metastore, resources.
 - `dbx-external-location.tf`: Databricks storage credential, and external location resources.
 - `azure-resource-group.tf`: Creates Azure resource groups.
@@ -25,6 +26,6 @@ This directory contains code to provision Databricks metastore and associated Az
 - Ensure you have the correct Azure credentials and Databricks profiles set up. User-2-Machine authentication through CLI is used here.
 - The IAM roles assigned are the minimum required for Unity Catalog to access Blob Container.
 
-For more details, refer to the official docs for GCS External Location:
+For more details, refer to the official docs for Azure External Location:
 - [Creating storage credentials](https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/storage-credentials).
 - [Creating external location](https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/external-locations)

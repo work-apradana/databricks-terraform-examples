@@ -14,7 +14,8 @@ This directory contains code to provision Databricks metastore and associated GC
 ## Files Overview
 
 - `providers.tf`: Configures required providers.
-- `variables.tf`: Input variables and local values.
+- `main.tf`: Intentionally left empty for future submodule-based deployment.
+- `variables.tf`: Input variables and local values. It is broken down into subfiles to indicate databricks and gcp specific variables.
 - `dbx-metastore.tf`: Databricks metastore, assignment, storage credential, and external location resources.
 - `gcp-gcs.tf`: GCS bucket and IAM bindings for Databricks service account.
 - `gcp-gcs-fileevent.tf`: (Commented) Optional resources for file event integration.
