@@ -1,7 +1,8 @@
 variable "default_tags" {
   type = map(string)
   default = {
-    owner = "aditya_pradana"
+    Owner       = "aditya.pradana@databricks.com"
+    RemoveAfter = "2025-12-30"
   }
 }
 
@@ -14,5 +15,5 @@ resource "random_string" "naming" {
 locals {
   alias = "<your-alias-or-id>"
   prefix = "${local.alias}-${random_string.naming.result}"
+  storage_account_name = "${alias}${random_string.naming.result}extstorage"
 }
-

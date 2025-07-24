@@ -1,0 +1,4 @@
+azure_subscription_id              = "0000-1234-abcd-efgh"
+databricks_resource_id             = "/subscriptions/0000-1234-abcd-efgh/resourceGroups/workspace-managed-rg-name"
+databricks_azure_account_profile   = "your-databricks-account-profile"
+databricks_azure_workspace_profile = "your-databricks-workspace-profile"

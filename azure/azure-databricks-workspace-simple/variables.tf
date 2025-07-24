@@ -1,10 +1,4 @@
-variable "default_tags" {
-  type = map(string)
-  default = {
-    owner = "aditya_pradana"
-  }
-}
-
+# Naming variables
 resource "random_string" "naming" {
   special = false
   upper   = false
@@ -16,3 +10,11 @@ locals {
   prefix = "${local.alias}-${random_string.naming.result}"
 }
 
+
+variable "default_tags" {
+  type = map(string)
+  default = {
+    Owner       = "aditya.pradana@databricks.com"
+    RemoveAfter = "2025-12-30"
+  }
+}

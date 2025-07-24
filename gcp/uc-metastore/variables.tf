@@ -12,5 +12,6 @@ resource "random_string" "naming" {
 }
 
 locals {
-  prefix = "databricks-${var.databricks_gcp_workspace_id}-apradana-${random_string.naming.result}"
+  alias = "<your-alias-or-id"
+  prefix = "databricks-${var.databricks_gcp_workspace_id}-${local.alias}-${random_string.naming.result}"
 }
