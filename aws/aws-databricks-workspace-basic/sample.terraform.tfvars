@@ -4,4 +4,5 @@ aws_account_id                 = "123456789012"
 aws_region                     = "ap-southeast-1"
 region_id                      = "sg"
 aws_profile                    = "your-aws-cli-profile"
+alias = "my_username"
 

@@ -12,8 +12,14 @@ resource "random_string" "naming" {
   length  = 6
 }
 
+variable "alias" {
+  type = string
+  default = "my_username"
+  description = "Your personal alias, name, initials, or identifier"
+}
+
 locals {
-  alias         = "<your-alias-or-id>"
+  alias         = "${var.alias}"
   prefix        = "${local.alias}-${random_string.naming.result}-${var.aws_region_id}"
   iam_role_name = "${local.prefix}-metastore-access-role"
   iam_role_arn  = "arn:aws:iam::${var.aws_account_id}:role/${local.iam_role_name}"
