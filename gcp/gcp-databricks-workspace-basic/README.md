@@ -15,6 +15,7 @@ This directory contains the following files:
 - `variables.tf`: Input variables and local values. It is broken down into subfiles to indicate databricks and gcp specific variables.
 - `variables-gcp.tf`: GCP-specific variables.
 - `variables-dbx.tf`: Databricks-specific variables.
+- `dbx-workspace.tf`: Deploy Databricks Workspace.
 - `main.tf`: Intentionally left empty for future submodule-based deployment.
 - `outputs.tf`: Exposes useful outputs from the module.
 
