@@ -5,13 +5,15 @@ This directory contains code to deploy a simple Azure Databricks workspace witho
 ## What This Module Does
 This module provisions a Databricks workspace on Microsoft Azure using Terraform. It automates the following:
 - **Creates an Azure Resource Group** in your specified Azure subscription.
-- **Creates a Databricks workspace** in your specified Azure subscription and resource group.
+- **Creates a Databricks workspace** in your specified Azure subscription and resource group with default managed Vnet settings.
+  - You can optionally configure Vnet CIDR prefix and NAT Gateway & NAT GW's public IP name.
 - **Outputs the Workspace Host URL**
 
 
 ## Files Overview
 
-- `main.tf`: Defines the Databricks workspace and required Azure resources.
+- `providers.tf`: Configures required providers.
+- `main.tf`: Intentionally left empty for future submodule-based deployment.
 - `outputs.tf`: Exposes the Databricks workspace URL.
 - `variables.tf`: Input variables for customization. It is broken down into subfiles to indicate databricks and azure specific variables
 - `azure-resource-group.tf`: Deploy Azure resource groups.

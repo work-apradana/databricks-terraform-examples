@@ -1,0 +1,5 @@
+azure_subscription_id = "0000-1234-abcd-efgh"
+azure_region = "Southeast Asia"
+azure_databricks_sku = "premium"
+vnet_address_prefix = "10.10.0.0/16"
+alias = "my_username"

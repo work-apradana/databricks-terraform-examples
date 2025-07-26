@@ -6,5 +6,9 @@ resource "azurerm_databricks_workspace" "this" {
   managed_resource_group_name = "${local.prefix}-workspace-managed-rg"
   tags                        = var.default_tags
 
-  # custom_parameters {}
+  custom_parameters {
+    vnet_address_prefix = var.vnet_address_prefix
+    nat_gateway_name = "${local.prefix}-nat-gw"
+    public_ip_name = "${local.prefix}-natgw-public-ip"
+  }
 }

@@ -5,8 +5,14 @@ resource "random_string" "naming" {
   length  = 6
 }
 
+variable "alias" {
+  type = string
+  default = "my_username"
+  description = "Your personal alias, name, initials, or identifier"
+}
+
 locals {
-  alias = "<your-alias-or-id>"
+  alias = var.alias
   prefix = "${local.alias}-${random_string.naming.result}"
 }
 
