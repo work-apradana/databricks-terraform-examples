@@ -19,5 +19,5 @@ variable "alias" {
 
 locals {
   alias = "${var.alias}"
-  prefix = "databricks-${var.databricks_gcp_workspace_id}-${local.alias}-${random_string.naming.result}"
+  prefix = "${local.alias}-${random_string.naming.result}"
 }

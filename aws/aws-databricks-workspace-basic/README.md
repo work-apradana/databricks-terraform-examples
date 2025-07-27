@@ -5,7 +5,7 @@ This directory contains Terraform code to provision a Databricks workspace and a
 ## What This Module Does
 
 - **Creates a secure AWS VPC** with public and private subnets, NAT gateway, and security groups.
-- **Sets up VPC endpoints** for S3, STS, and Kinesis to enable private connectivity from Databricks.
+- **Sets up VPC endpoints** for S3, STS, and Kinesis to enable private connectivity from Databricks. All 3 endpoints are recommended for production, but if you are developing/testing, S3 Gateway should be sufficient. 
 - **Provisions S3 buckets** for Databricks root storage with encryption and public access blocking.
 - **Configures IAM roles and policies** for Databricks cross-account access.
 - **Deploys Databricks workspace** using the MWS (multi-workspace) API.
@@ -41,7 +41,7 @@ This directory contains Terraform code to provision a Databricks workspace and a
 - This module is designed for AWS accounts with Databricks MWS (E2) enabled.
 - The S3 bucket is created with encryption and public access blocked by default.
 - IAM roles are provisioned for secure cross-account access by Databricks.
-- VPC endpoints are needed.
+- VPC endpoints are optional. Deploying VPC endpoints may incur hourly and bandwidth cost. S3 Gateway endpoint is recommended to minimize public egress cost.
 
 ## References
 
